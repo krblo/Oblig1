@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Oblig 1</title>
+    <script src="index.js"></script>
 </head>
 <body>
 
+<h1>Bestilling av kinobiletter</h1>
+
+<label for="Antall">Antall </label>
+<input type="number" id="Antall" min="1" required><br>
+
+ <label for="fornavn">Fornavn </label>
+<input type="text" id="fornavn" required><br>
+
+<label for="etternavn">Etternavn </label>
+<input type="text" id="etternavn" required><br>
+
+<label for="tlf">Telefonnr </label>
+<input type="tel" id="tlf" pattern="[0-9]{8}" required><br>
+
+<label for="Epost">Epost </label>
+<input type="text" id="Epost" required><br>
+
+<button onclick="kjøpBilett">Kjøp billett</button>
+
+<h2>Alle biletter</h2>
+<ul id="billettListe"></ul>
+
+<button onclick="slettBiletter">Slett alle bilettene</button>
 </body>
 </html>
