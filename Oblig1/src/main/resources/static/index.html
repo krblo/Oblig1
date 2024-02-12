@@ -8,9 +8,10 @@
 <body>
 
 <h1>Bestilling av kinobiletter</h1>
+<table>
+<input >
 
-<label for="Antall">Antall </label>
-<input type="number" id="Antall" min="1" required><br>
+<tr><td>Antall</td><input type="number" id="Antall" min="1" required></tr> <br>
 
  <label for="fornavn">Fornavn </label>
 <input type="text" id="fornavn" required><br>
@@ -28,7 +29,7 @@
 
 <h2>Alle biletter</h2>
 <ul id="billettListe"></ul>
-
+</table>
 <button onclick="slettBiletter">Slett alle bilettene</button>
 </body>
 </html>
