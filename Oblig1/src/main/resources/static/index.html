@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Oblig 1</title>
@@ -9,26 +9,28 @@
 
 <h1>Bestilling av kinobiletter</h1>
 <table>
-<input >
 
-<tr><td>Antall</td><input type="number" id="Antall" min="1" required></tr> <br>
+    <tr><td>Velg film:</td><td><select id="Film" onchange="choose();">
+    <option>Mazerunner 1</option>
+    <option>Mazerunner 2</option>
+    <option>Mazerunner 3</option>
+    <option>Avatar 1</option>
+    <option>Avatar 2</option>
+    </select>
+    <tr><td>Antall</td><td><input type="number" id="Antall" min="1" required></td></tr>
 
- <label for="fornavn">Fornavn </label>
-<input type="text" id="fornavn" required><br>
+    <tr><td>Fornavn</td><td><input type="text" id="Fornavn" required></td></tr>
 
-<label for="etternavn">Etternavn </label>
-<input type="text" id="etternavn" required><br>
+    <tr><td>Etternavn</td><td><input type="text" id="Etternavn" required></td></tr>
 
-<label for="tlf">Telefonnr </label>
-<input type="tel" id="tlf" pattern="[0-9]{8}" required><br>
+    <tr><td>Telefonnr</td><td><input type="tel" id="Telefonnr" pattern="[0-9]{8}" required></td></tr>
 
-<label for="Epost">Epost </label>
-<input type="text" id="Epost" required><br>
+    <tr><td>Epost</td><td><input type="text" id="Epost" required></td></tr>
 
-<button onclick="kjøpBilett">Kjøp billett</button>
-
-<h2>Alle biletter</h2>
-<ul id="billettListe"></ul>
+    <tr><td><button onclick="registrer()">Kjøp billett</button></td></tr>
+<div id="billettliste"></div>
+    
+    <tr><td><h2>Alle biletter</h2></td></tr>
 </table>
 <button onclick="slettBiletter">Slett alle bilettene</button>
 </body>
