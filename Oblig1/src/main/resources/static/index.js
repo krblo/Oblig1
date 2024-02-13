@@ -19,7 +19,7 @@ function visbilletListe() {
         const Telefonnr = document.getElementById("Telefonnr").value;
         const Epost = document.getElementById("Epost").value;
 
-    const person ={
+    const buy ={
         Film : Film,
         Antall : Antall,
         Fornavn : Fornavn,
@@ -27,7 +27,7 @@ function visbilletListe() {
         Telefonnr : Telefonnr,
         Epost : Epost,
     };
-    billetListe.push(person);
+    billetListe.push(buy);
     document.getElementById("Film").value="";
     document.getElementById("Antall").value="";
     document.getElementById("Fornavn").value="";
