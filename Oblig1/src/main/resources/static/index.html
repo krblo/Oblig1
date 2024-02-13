@@ -10,28 +10,31 @@
 <h1>Bestilling av kinobiletter</h1>
 <table>
 
-    <tr><td>Velg film:</td><td><select id="Film" onchange="choose();">
+    <tr><td>Velg film:</td><td><select id="Film">
+    <option>Velg film</option>
     <option>Mazerunner 1</option>
     <option>Mazerunner 2</option>
     <option>Mazerunner 3</option>
     <option>Avatar 1</option>
     <option>Avatar 2</option>
-    </select>
-    <tr><td>Antall</td><td><input type="number" id="Antall" min="1" required></td></tr>
+    </select><span id="film check"></span>
+    <tr><td>Antall</td><td><input type="text" id="Antall" min="1"></td></tr>
 
-    <tr><td>Fornavn</td><td><input type="text" id="Fornavn" required></td></tr>
+    <tr><td>Fornavn</td><td><input type="text" id="Fornavn"></td></tr>
 
-    <tr><td>Etternavn</td><td><input type="text" id="Etternavn" required></td></tr>
+    <tr><td>Etternavn</td><td><input type="text" id="Etternavn"></td></tr>
 
-    <tr><td>Telefonnr</td><td><input type="tel" id="Telefonnr" pattern="[0-9]{8}" required></td></tr>
+    <tr><td>Telefonnr</td><td><input type="tel" id="Telefonnr" pattern="[0-9]{8}"></td></tr>
 
-    <tr><td>Epost</td><td><input type="text" id="Epost" required></td></tr>
+    <tr><td>Epost</td><td><input type="text" id="Epost"></td></tr>
 
     <tr><td><button onclick="registrer()">Kjøp billett</button></td></tr>
-<div id="billettliste"></div>
-    
-    <tr><td><h2>Alle biletter</h2></td></tr>
+
 </table>
-<button onclick="slettBiletter">Slett alle bilettene</button>
+    <h2>Alle biletter</h2>
+
+<div id="billetListe"></div>
+<br><button onclick="slett()">Slett alle bilettene</button>
+
 </body>
 </html>
