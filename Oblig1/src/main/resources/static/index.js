@@ -78,14 +78,7 @@ function visbilletListe() {
             document.getElementById("Epost").value = "";
             visbilletListe()
         }
-        else{
-            document.getElementById("Film").value = "";
-            document.getElementById("Antall").value = "";
-            document.getElementById("Fornavn").value = "";
-            document.getElementById("Etternavn").value = "";
-            document.getElementById("Telefonnr").value = "";
-            document.getElementById("Epost").value = "";
-        }
+
 
     
         }
